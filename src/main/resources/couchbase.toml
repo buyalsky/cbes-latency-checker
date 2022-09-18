@@ -1,0 +1,13 @@
+[[clusters]]
+hosts = ['']
+network = 'auto'
+username = ''
+password = ''
+
+[[clusters.buckets]]
+bucket = ''
+checkpointBucket = ''
+groupName = ''
+threshold = 100_000
+offsetCheckInitialDelayInSeconds = 10
+offsetCheckDelayInSeconds = 10

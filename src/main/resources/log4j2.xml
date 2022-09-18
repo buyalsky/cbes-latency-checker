@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">{&quot;time&quot;: &quot;%d{&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss&quot;}&quot;, &quot;level&quot;: &quot;%p&quot;, &quot;logger-name&quot;: &quot;%logger&quot;, &quot;source&quot;: &quot;%logger{63}:%L&quot;, &quot;message&quot;: &quot;%m}%n </Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>
